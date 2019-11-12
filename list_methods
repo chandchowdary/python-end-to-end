@@ -1,0 +1,28 @@
+lists methods in python
+-----------------------
+length--to know the length of the list.
+traversig--using for loop we can get the every single value.
+enumerate--we can get the every single value with their indexes.
+in--we can get boolean value if value in a list.it's a case sensitive.
+not in--we can boolean value same like in operator.
+list[searchindex]=updatedelement--to update the element as per the index.
+del list[searchindex]--to delete the element as per the index.
+list1 + list2--by using '+' operator we can add two lists.
+list.append("value")--to append the value at the end.
+list1.extend(list2)--we are appending list2 with list1 by using extend method.(benifit:memory save)
+list.index(inchoice)--that index method will return us index number based on inchoice element.
+list.insert(index,element)--we can insert an element whereever we want based on index number.
+list.pop()--we are poping out means deleting the last element.
+list.pop(index)--we are poping out means deleting the  element based on the index number.
+list.reverse()--it will reverse the list
+list.sort()--we can sort the elements in the list by the Aesecending order.
+list.sort(reverse=true)--we can sort the elements in the list by the desecending order.
+list(firstname)--it will return us character by character.
+list.remove(element)--it will remove element from the list.
+list2=list1.copy()--to make the copy of the first list.
+list2=list.[:]--another mehanism of copy
+list.clear()--it will clear the list reference.
+if any(searchindex in searchelement for searchindex in list)--this any expression return true if searchelement found.
+enumerate(list)--it will return element with index number.default index is 0.
+enumerate(list,13)--it will return element with index number.we can start any index number
+filterlist.append(element)--we can filter any element from the list.
