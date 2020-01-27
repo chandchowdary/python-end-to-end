@@ -1,0 +1,105 @@
+#!python3
+import os
+os.system("cls")
+
+firstname="chand"
+
+loopindex=len(firstname)
+
+while(loopindex>0):
+	print(firstname[loopindex-1],end="\n")
+	loopindex-=1
+----------------------------------------------
+#!python3
+import os
+os.system("cls")
+
+number=int(input("\nenter the number:"))
+assert(number>1==True)
+
+if number>1:
+	if number%2==0:
+		print("\nit's not a prime")
+	else:
+		print("\nit's a prime")
+-------------------------------------------------
+#!python3
+import os
+os.system("cls")
+
+factnumber=int(input("\nenter the number:"))
+factvalue=1
+
+if(factnumber==1):
+	print('{}'.format(factnumber))
+else:
+	while(factnumber>1):
+		factvalue=factvalue*factnumber
+		factnumber-=1
+	print('{}'.format(factvalue))
+---------------------------------------------------
+#!python3
+import os
+os.system("cls")
+
+firstname=input("\nenter the name you want:")
+pname=""
+
+loopindex=len(firstname)
+
+while(loopindex>0):
+	pname=pname+firstname[loopindex-1]
+	loopindex-=1
+
+if firstname==pname:
+	print('{}'.format(pname)+ " " +" is a palidrome ",end="\n")
+else:
+	print("\nnot a palidrome")
+----------------------------------------------------------
+#!python3
+import os
+os.system("cls")
+
+number=int(input("\nenter the number you want:"))
+sumnum=0
+temp=number
+
+while(temp>0):
+	remainder=temp%10
+	sumnum+=remainder**3
+	temp=temp//10
+
+if number==sumnum:
+	print('{}'.format(number)+ " " +" is a armstrong ",end="\n")
+else:
+	print("\nnot a armstrong")
+-------------------------------------------------------------------
+#!python3
+import os
+os.system("cls")
+
+startrange=0
+endrange=int(input("\nenter the endrange you want to find:"))
+incrementorvalue=1
+fibonacicount=0
+
+while(endrange>fibonacicount):
+	nextlevel=startrange+incrementorvalue
+	startrange=incrementorvalue
+	incrementorvalue=nextlevel
+	fibonacicount+=1
+	print(nextlevel)
+-------------------------------------------------------------------
+#!python3
+import os
+os.system("cls")
+
+num=int(input("\nenter the number:"))
+for i in range(num,0,-1):
+	for j in range(0,num-i):
+		print(end="")
+	for j in range(0,i):
+		print("*",end="")
+		#print("*",end="  ")
+		
+	print()
